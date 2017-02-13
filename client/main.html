@@ -1,0 +1,32 @@
+<head>
+  <title>simple-chat</title>
+</head>
+
+<body>
+  <h1>Simple Chat</h1>
+  {{> chatbox}}
+</body>
+
+<template name="chatbox">
+  <div class = "chatbox">
+    <div class ="content">
+      {{#each msgList}}
+      {{#if myName}}
+      <div style="text-align:right;">
+        ({{name}}):{{msg}}
+      </div>
+      {{else}}
+      <div>
+        ({{name}}):{{msg}}
+      </div>
+      {{/if}}
+      {{/each}}
+    </div>
+
+    <div class = "input">
+      <input type="text" id="input-name" placehoder="your name" size=10>
+      <input type="text" id="input-msg"><button id="add-msg">send</button>
+    </div>
+  </div>
+
+</template>

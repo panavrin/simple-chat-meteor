@@ -1,0 +1,13 @@
+node_modules/
+
+.meteor/.finished-upgraders
+
+.meteor/.id
+
+.meteor/packages
+
+.meteor/platforms
+
+.meteor/release
+
+.meteor/versions
